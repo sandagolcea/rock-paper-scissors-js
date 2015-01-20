@@ -1,0 +1,58 @@
+
+/**********************
+  Main text handling
+***********************/
+body {
+  background-color: white;
+}
+
+body.highlight {
+  background-color: green;
+}
+
+h1 {
+  text-align: center;
+}
+
+.index {
+  text-align: center;
+}
+
+.game {
+  text-align: center;
+}
+
+
+/***********************
+  Picture handling
+***********************/
+img {
+  width: 175px;
+  height: 175px;
+
+  padding-right: 10px;
+  padding-left: 10px;
+
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+}
+
+.choice:hover {
+
+  width: 200px;
+  height: 200px;
+}
+
+.result:hover {
+  width: 175px;
+  height: 175px;
+}
+
+/***********************
+Table and other elements
+***********************/
+
+table {
+  margin: 0 auto;
+}
+
