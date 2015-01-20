@@ -37,7 +37,7 @@ img {
   -webkit-border-radius: 50%;
 }
 
-.choice:hover {
+.choices:hover {
 
   width: 200px;
   height: 200px;
@@ -46,6 +46,19 @@ img {
 .result:hover {
   width: 175px;
   height: 175px;
+}
+
+#resultPicture img {
+  margin: 0 auto;
+  display: block;
+  border-radius: 0%;
+  -webkit-border-radius: 0%;
+}
+
+#resultPicture ul li {
+  list-style-type: none;
+  display: inline;
+  visibility: hidden;
 }
 
 /***********************
