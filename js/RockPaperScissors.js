@@ -1,25 +1,45 @@
 var RockPaperScissors = function() {};
 
-RockPaperScissors.prototype.rock_versus = function(choice) {
+RockPaperScissors.prototype.rockVersus = function(choice) {
   if (choice=="scissors") {
-    return true;
+    return "rock";
   }
-  return false;
+  return "paper";
 };
 
-RockPaperScissors.prototype.paper_versus = function(choice){
+RockPaperScissors.prototype.paperVersus = function(choice){
     if (choice=="rock") {
-    return true;
+    return "paper";
   }
-  return false;
+  return "scissors";
 };
 
-RockPaperScissors.prototype.scissors_versus = function(choice){
+RockPaperScissors.prototype.scissorsVersus = function(choice){
     if (choice=="paper") {
-    return true;
+    return "scissors";
   }
-  return false;
+  return "rock";
 };
+
+RockPaperScissors.prototype.getWinner = function(choice1, choice2) {
+  if (choice1 === choice2){
+    return "tie";
+  }
+
+  switch(choice1) {
+    case "rock":
+      return this.rockVersus(choice2);
+      break;
+    case "paper":
+      return this.paperVersus(choice2);
+      break;
+    case "scissors":
+      return this.scissorsVersus(choice2);
+      break;
+    default:
+      break;
+  };
+}
 
 RockPaperScissors.randomChoice = function(){
   var choice = Math.random();
@@ -30,3 +50,4 @@ RockPaperScissors.randomChoice = function(){
   else 
     return("paper");
 };
+
