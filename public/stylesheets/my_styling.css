@@ -61,6 +61,13 @@ img {
   visibility: hidden;
 }
 
+#resultPicture ul li {
+  list-style-type: none;
+  display: inline;
+  visibility: hidden;
+}
+
+
 /***********************
 Table and other elements
 ***********************/
