@@ -25,11 +25,17 @@ var result = function(userChoice) {
 
   if (outcome === userChoice){
     $('body').css('background-image','url("../public/images/happyFace.svg")');
+    $('#computer-choice-text').html("The computer chose: " + computerChoice);
+    $('#game-result-text').html("You WIN!!");
   }
   else if (outcome === computerChoice){
     $('body').css('background-image','url("../public/images/sadFace.svg")');
+    $('#computer-choice-text').html("The computer chose: " + computerChoice);
+    $('#game-result-text').html("You LOSE!!");
   }
   else {
     $('body').css('background-image','url("../public/images/neutralFace.svg")');
+        $('#computer-choice-text').html("The computer chose: " + computerChoice);
+        $('#game-result-text').html("It's a tie!");
   }
 };

@@ -1,3 +1,4 @@
+// This is the javascript equivalent of the jQuery Game
 window.onload = function() {
 
   var rps = new RockPaperScissors();

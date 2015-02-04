@@ -6,22 +6,9 @@ body {
   background-color: white;
 }
 
-body.highlight {
-  background-color: green;
-}
-
-h1 {
+p {
   text-align: center;
 }
-
-.index {
-  text-align: center;
-}
-
-.game {
-  text-align: center;
-}
-
 
 /***********************
   Picture handling
